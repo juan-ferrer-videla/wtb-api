@@ -1,0 +1,17 @@
+{
+  "name": "wtb-api-cors",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts",
+    "build": "tsc && tsc-alias",
+    "start": "node ./dist/src/index.js",
+    "tunnel": "cloudflared tunnel --url http://localhost:3000"
+  },
+  "dependencies": {
+    "hono": "^4.7.10",
+    "zod": "^3.25.28"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "tsc-alias": "^1.8.16"
+  }
+}
