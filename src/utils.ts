@@ -72,6 +72,10 @@ export const getDealers = async (options?: {
 
     const res = await fetch(url, {
       signal: controller.signal,
+      headers: {
+        "User-Agent": "node-fetch/1.0 (+https://github.com/bitinn/node-fetch)",
+        Accept: "application/json",
+      },
     });
 
     clearTimeout(timeoutId);

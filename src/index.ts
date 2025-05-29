@@ -37,4 +37,4 @@ app.get("/", async (c) => {
   return c.json(dealers);
 });
 
-export default app;
+export default { port: 3000, fetch: app.fetch };
